@@ -1,0 +1,7 @@
+{:paths ["src"]
+ :deps {metosin/muuntaja {:mvn/version "0.6.10"}
+        http-kit/http-kit {:mvn/version "2.8.0"}
+        ring/ring-core {:mvn/version "1.12.1"}}
+ :aliases {:nextjournal/garden {:exec-fn sohalt.kindergarten/main
+                                :exec-args {:api-ns demo}
+                                :extra-paths ["demo"]}}}
